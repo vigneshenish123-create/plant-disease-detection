@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plant Disease Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+    <div class="header">
+        <div class="leaf-icon">🍃</div>
+        <h1>Plant Disease Detector</h1>
+        <p>AI-Powered Agricultural Assistant</p>
+    </div>
+
+    <div class="content">
+        <div class="circle">
+            🍃
+        </div>
+
+        <h2>Detect Plant Diseases</h2>
+        <p class="desc">
+            Upload or capture a clear image of a plant leaf to detect diseases and get treatment recommendations.
+        </p>
+
+        <input type="file" id="imageInput" accept="image/*" hidden>
+
+        <button class="btn primary" onclick="openCamera()">
+            📷 Take Photo
+        </button>
+
+        <button class="btn secondary" onclick="openGallery()">
+            🖼️ Choose from Gallery
+        </button>
+
+        <p class="tip">
+            ℹ️ For best results, capture the leaf in good lighting with visible symptoms.
+        </p>
+
+        <img id="preview" class="preview" />
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
